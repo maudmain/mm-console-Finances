@@ -89,16 +89,30 @@ let finances = [
     
 // Display title on the console log
 console.log ("Financial Analysis");
-console.log ("------------------------------")
+console.log ("------------------------------");
 
 // Calculate the number of months and display
-console.log ("Total Months: " + finances.length);
+let numberOfMonths = finances.length;
+console.log ("Total Months: " + numberOfMonths);
 
 // Calculate the total amount of Profit/Losses over the entire period
+// first set new arrays for each dates and amounts
+arrayDates = finances.map (a => a[0]);
+arrayAmounts = finances.map (a => a[1]);
+
+let totalSum = 0;
+
+for (let i=0; i < arrayAmounts.length; i++) {
+totalSum += arrayAmounts[i];
+}
 
 // Display result for total amount
+console.log ("Total sum for Profit and Loss is: $"+ totalSum);
 
 // Calculate the average of the change in profit/loss over the entire period
+
+console.log(avChangePL)
+
 
 // Display result for the average of the change in profit/loss
 
