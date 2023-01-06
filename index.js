@@ -106,12 +106,23 @@ for (let i=0; i < arrayAmounts.length; i++) {
 totalSum += arrayAmounts[i];
 }
 
+/* Other code option explained on https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers
+let avChange = arrayAmounts.reduce(add, 0);
+
+function add(accumulator, a) {
+  return accumulator + a;
+}
+
+console.log(avChange); */
+
 // Display result for total amount
 console.log ("Total sum for Profit and Loss is: $"+ totalSum);
 
 // Calculate the average of the change in profit/loss over the entire period
 
-console.log(avChangePL)
+let avChangePL = (totalSum / finances.length);// need to round 
+
+console.log (avChangePL);
 
 
 // Display result for the average of the change in profit/loss
