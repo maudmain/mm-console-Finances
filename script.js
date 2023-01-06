@@ -87,19 +87,27 @@ let finances = [
     ['Feb-2017', 671099]
     ];
     
-// Title on the console log
+// Display title on the console log
 console.log ("Financial Analysis");
 console.log ("------------------------------")
 
-// Calculate the number of months
+// Calculate the number of months and display
 console.log ("Total Months: " + finances.length);
 
-// Calculate the total amount of Profit/Losses over teh entire period
+// Calculate the total amount of Profit/Losses over the entire period
+
+// Display result for total amount
 
 // Calculate the average of the change in profit/loss over the entire period
+
+// Display result for the average of the change in profit/loss
 
 // Track the total change in profit from month to month and find the average
 
 // Calculate the greatest increase in profits (date and amount) over the entire period
 
+// Display the result for the greatest increase in profits 
+
 // Calculate the greatest decrease in losses (date and amount) over the entire period
+
+// Display the result for greatest decrease in losses 
