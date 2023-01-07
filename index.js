@@ -110,7 +110,7 @@ for (let i = 0; i < arrayAmounts.length; i++) {
 console.log("Total sum for Profit and Loss is: $" + totalSum);
 
 // Calculate the average of the !!change!! in profit/loss over the entire period (need to calculateh the change from 1 month to the next)
-let amountDiff = [];
+let financesDiffs = [];
 
 for (i = 0; i < finances.length; i++) {
   let monthlyDiff = 0;
@@ -121,24 +121,26 @@ for (i = 0; i < finances.length; i++) {
     monthlyDiff = arrayAmounts[i] - arrayAmounts[i - 1];
 
   }
-  amountDiff.push(monthlyDiff);
+  financesDiffs.push([arrayDates[i],arrayAmounts[i], monthlyDiff]);
 }
-console.log(amountDiff);
+arrayDiff = financesDiffs.map(a => a[2]);
+// console.log(financesDiffs);
 
 // Track the total change in profit from month to month and find the average
-const average = amountDiff.reduce((runningTotal, amount) => runningTotal + amount) / amountDiff.length;
+const average = arrayDiff.reduce((runningTotal, amount) => runningTotal + amount) / arrayDiff.length;
 
 // Display result for the average of the change in profit/loss
-console.log(average);
+console.log(`Average Change: $${average.toFixed(2)}`);
 
 // Calculate the greatest increase in profits (date and amount) over the entire period
-let max = finances.reduce((maxSoFar, financeToCompare) => financeToCompare[1] > maxSoFar[1] ? financeToCompare : maxSoFar);
+let max = financesDiffs.reduce((maxSoFar, financeToCompare) => financeToCompare[2] > maxSoFar[2] ? financeToCompare : maxSoFar);
 
 // Display the result for the greatest increase in profits
-console.log(`Max ${max[0]} $${max[1]}`)
+console.log(`Greatest Increase in Profits: ${max[0]} $${max[2]}`)
 
 // Calculate the greatest decrease in losses (date and amount) over the entire period
-let min = finances.reduce((minSoFar, financeToCompare) => financeToCompare[1] < minSoFar[1] ? financeToCompare : minSoFar) ;
+let min = financesDiffs.reduce((minSoFar, financeToCompare) => financeToCompare[2] < minSoFar[2] ? financeToCompare : minSoFar) ;
 
 // Display the result for greatest decrease in losses 
-console.log(`Min ${min[0]} $${min[1]}`)
+console.log(`Greatest Increase in Loss: ${min[0]} $${min[2]}`)
+
