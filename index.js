@@ -136,11 +136,11 @@ console.log(`Average Change: $${average.toFixed(2)}`);
 let max = financesDiffs.reduce((maxSoFar, financeToCompare) => financeToCompare[2] > maxSoFar[2] ? financeToCompare : maxSoFar);
 
 // Display the result for the greatest increase in profits
-console.log(`Greatest Increase in Profits: ${max[0]} $${max[2]}`)
+console.log(`Greatest Increase in Profits: ${max[0]} ($${max[2]})`)
 
 // Calculate the greatest decrease in losses (date and amount) over the entire period
 let min = financesDiffs.reduce((minSoFar, financeToCompare) => financeToCompare[2] < minSoFar[2] ? financeToCompare : minSoFar) ;
 
 // Display the result for greatest decrease in losses 
-console.log(`Greatest Increase in Loss: ${min[0]} $${min[2]}`)
+console.log(`Greatest Increase in Loss: ${min[0]} ($${min[2]})`)
 

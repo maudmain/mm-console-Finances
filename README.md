@@ -42,6 +42,7 @@ Your final code should print the analysis to the console.
 * How do you only print to the nearest 100th in JavaScript?
 
 ## Usage
+
 [comment]: # ( to add usage details)
 
 ![Deployed Page Screenshot]()
