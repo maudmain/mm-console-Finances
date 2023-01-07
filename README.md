@@ -42,12 +42,12 @@ Your final code should print the analysis to the console.
 * How do you only print to the nearest 100th in JavaScript?
 
 ## Usage
+To view the final results, you will need to open the page in the browser [Deployed landing page](https://maudmain.github.io/mm-console-Finances/) and open the Dev Tool console.
 
-[comment]: # ( to add usage details)
+The result will appear as such:
+![Deployed Page Screenshot](./assets/Screenshot.PNG)
 
-![Deployed Page Screenshot]()
 
-Have a look at: [Deployed landing page]()
 
 ## Credits
 
