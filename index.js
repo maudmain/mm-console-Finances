@@ -138,5 +138,7 @@ let max = finances.reduce((maxSoFar, financeToCompare) => financeToCompare[1] > 
 console.log(`Max ${max[0]} $${max[1]}`)
 
 // Calculate the greatest decrease in losses (date and amount) over the entire period
+let min = finances.reduce((minSoFar, financeToCompare) => financeToCompare[1] < minSoFar[1] ? financeToCompare : minSoFar) ;
 
 // Display the result for greatest decrease in losses 
+console.log(`Min ${min[0]} $${min[1]}`)
