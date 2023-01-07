@@ -48,10 +48,17 @@ The result will appear as such:
 ![Deployed Page Screenshot](./assets/Screenshot.PNG)
 
 
-
 ## Credits
 
 - edX Bootcamp: for project brief and criterias, tutorial and ressources
+
+ What I have learned/ Resources:
+- Multi-dimensional array, https://www.javascripttutorial.net/javascript-multidimensional-array/#:~:text=To%20access%20an%20element%20of,element%20of%20the%20inner%20array
+- Arrow function, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+- Array reduce, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+- to.fixed https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+- Template literals https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
 
 
 ## License
