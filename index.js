@@ -142,5 +142,4 @@ console.log(`Greatest Increase in Profits: ${max[0]} ($${max[2]})`)
 let min = financesDiffs.reduce((minSoFar, financeToCompare) => financeToCompare[2] < minSoFar[2] ? financeToCompare : minSoFar) ;
 
 // Display the result for greatest decrease in losses 
-console.log(`Greatest Increase in Loss: ${min[0]} ($${min[2]})`)
-
+console.log(`Greatest Decrease in Profit: ${min[0]} ($${min[2]})`)
